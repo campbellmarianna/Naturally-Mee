@@ -239,9 +239,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6J-Sh-qNJ">
-                                <rect key="frame" x="88" y="173" width="46" height="30"/>
+                                <rect key="frame" x="16" y="80" width="167" height="242"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <state key="normal" title="Vegan">
+                                    <color key="titleColor" red="0.7573429386340651" green="0.29361640737513173" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -253,7 +256,7 @@
             </objects>
             <point key="canvasLocation" x="1901.5999999999999" y="1562.9685157421291"/>
         </scene>
-        <!--Item-->
+        <!--Account-->
         <scene sceneID="jdE-UX-Bmt">
             <objects>
                 <viewController id="648-sk-PLc" sceneMemberID="viewController">
@@ -263,7 +266,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="fNt-u2-amk"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="wCg-mz-H3y"/>
+                    <tabBarItem key="tabBarItem" title="Account" id="wCg-mz-H3y"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jyk-ws-tO0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -293,6 +296,7 @@
                 <tabBarController title="Naturally Mee" automaticallyAdjustsScrollViewInsets="NO" id="lla-GY-ani" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Az-1K-WjG">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.4823529411764706" green="0.72941176470588232" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -311,6 +315,6 @@
         <image name="NaturallyMeeLogo" width="480" height="576"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4Re-QK-CWn"/>
+        <segue reference="2mN-Qm-MKk"/>
     </inferredMetricsTieBreakers>
 </document>
