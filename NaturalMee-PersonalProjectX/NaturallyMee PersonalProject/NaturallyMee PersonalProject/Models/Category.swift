@@ -1,22 +1,16 @@
 //
-//  Product.swift
+//  Category.swift
 //  NaturallyMee PersonalProject
 //
-//  Created by Mari Campbell on 7/31/18.
+//  Created by Mari Campbell on 8/1/18.
 //  Copyright © 2018 Marianna Campbell. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-
-struct Product {
-    var image: UIImage
+struct Category {
     var name: String
     var description: String
-    var price: String
-    var link: String
-    
+    var products: [Product]
 }
-
-
