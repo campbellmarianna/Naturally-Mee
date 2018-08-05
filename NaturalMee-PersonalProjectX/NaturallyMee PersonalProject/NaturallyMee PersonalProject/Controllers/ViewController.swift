@@ -43,11 +43,10 @@ class ViewController: UIViewController {
     }
 
       //MARK: IBActions
-
-    @IBAction func naturalHairAndSkincareButtonTapped(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "TargetProductDisplay", bundle: nil)
-        let TargetProductDisplay = storyboard.instantiateViewController(withIdentifier: "TargetProductDisplay")
-        self.present(TargetProductDisplay, animated: true, completion: nil)
+        @IBAction func naturalHairAndSkincareButtonTapped(_ sender: UIButton) {
+            let storyboard = UIStoryboard(name: "TargetProductDisplay", bundle: nil)
+            let TargetProductDisplay = storyboard.instantiateViewController(withIdentifier: "TargetProductDisplay")
+            self.present(TargetProductDisplay, animated: true, completion: nil)
     }
     
 

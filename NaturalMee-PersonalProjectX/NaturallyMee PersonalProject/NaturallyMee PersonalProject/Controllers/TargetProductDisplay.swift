@@ -9,8 +9,9 @@
 import Foundation
 import UIKit
 
-class TargetProductDisplay: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
- 
+class TargetProductDisplay: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
+ // Took out UICollectionViewDelegateFlowLayout
+    
     //MARK: IBOutlet:
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     
@@ -23,9 +24,18 @@ class TargetProductDisplay: UIViewController, UICollectionViewDelegateFlowLayout
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        //Example on how to connect storyboard view to delegate and data source in code:
-          //categoryCollectionView.delegate = self
-          //categoryCollectionView.dataSource = self
+        
+        /*Example on how to connect storyboard view to delegate and data source in code:
+              categoryCollectionView.delegate = self
+              categoryCollectionView.dataSource = self */
+            categoryCollectionView.delegate = self
+            categoryCollectionView.dataSource = self
+        
+        //let layout = self.categoryCollectionView as! UICollectionViewFlowLayout
+//        layout.sectionInset = UIEdgeInsetsMake(0, 5, 0, 5)
+//        layout.minimumInteritemSpacing = 2
+//        layout.itemSize = CGSize(width: (self.categoryCollectionView.frame.size.width - 20)/2, height: self.categoryCollectionView.frame.size.height/3)
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -36,7 +46,11 @@ class TargetProductDisplay: UIViewController, UICollectionViewDelegateFlowLayout
     
     //Collection View for Categories
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return categories.count}
+        return categories.count
+        
+        //Trying it out:
+        
+    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let categoryCell = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryCell", for: indexPath) as! CollectionViewCell
