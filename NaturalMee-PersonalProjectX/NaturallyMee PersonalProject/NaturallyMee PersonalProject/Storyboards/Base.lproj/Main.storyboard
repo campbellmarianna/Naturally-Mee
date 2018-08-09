@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="udW-dj-VYe">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,17 +15,18 @@
             <objects>
                 <viewController title="Home" id="BYZ-38-t0r" customClass="ViewController" customModule="NaturallyMee_PersonalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NaturallyMeeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="owc-TY-pYl">
-                                <rect key="frame" x="29" y="144" width="316" height="378"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NaturallyMeeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="owc-TY-pYl">
+                                <rect key="frame" x="29" y="144" width="355" height="447"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7p-0r-C06">
-                                <rect key="frame" x="23" y="573" width="329" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7p-0r-C06">
+                                <rect key="frame" x="20" y="642" width="374" height="53"/>
                                 <color key="backgroundColor" red="0.4823529411764706" green="0.72941176470588232" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="vUN-Lk-GzF"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
                                 <state key="normal" title="Natural Hair and Skincare">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -42,9 +43,20 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="d7p-0r-C06" secondAttribute="trailing" constant="20" id="WFI-wu-nrh"/>
+                            <constraint firstItem="owc-TY-pYl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="YnU-za-AkX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="owc-TY-pYl" secondAttribute="trailing" constant="30" id="d1n-gh-G39"/>
+                            <constraint firstItem="owc-TY-pYl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="ibl-1w-lru"/>
+                            <constraint firstAttribute="bottom" secondItem="owc-TY-pYl" secondAttribute="bottom" constant="145" id="jZC-PD-b98"/>
+                            <constraint firstAttribute="bottom" secondItem="d7p-0r-C06" secondAttribute="bottom" constant="41" id="qIc-71-HGZ"/>
+                            <constraint firstItem="d7p-0r-C06" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="qUP-Rj-15e"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="UYJ-XW-CCQ"/>
+                    <navigationItem key="navigationItem" id="UYJ-XW-CCQ">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="YmB-He-1Hi"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="signupButton" destination="d7p-0r-C06" id="Ju6-ZB-aDH"/>
                         <segue destination="mQi-5q-6lO" kind="show" identifier="segueCollectionView" id="oH2-Hd-AGe"/>
@@ -68,7 +80,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="udW-dj-VYe" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="op8-yJ-7GH">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -78,7 +90,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qml-Gb-61p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
+            <point key="canvasLocation" x="35" y="33"/>
         </scene>
     </scenes>
     <resources>

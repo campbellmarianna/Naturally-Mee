@@ -11,6 +11,8 @@ import UIKit
 
 struct Category {
     var name: String
-    var description: String
+    var categoryImage: UIImage
     var products: [Product]
+    
+  
 }

@@ -13,9 +13,13 @@ class ProductListTableViewCell: UITableViewCell {
     //MARK: IBOutlets:
     
     
+//    @IBOutlet weak var productImage: UIImageView!
+//    @IBOutlet weak var productLabel: UILabel!
+//    @IBOutlet weak var productDescription: UILabel!
+    
     @IBOutlet weak var productImage: UIImageView!
     @IBOutlet weak var productLabel: UILabel!
-    @IBOutlet weak var productDescription: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,5 +31,6 @@ class ProductListTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+   
+    
 }

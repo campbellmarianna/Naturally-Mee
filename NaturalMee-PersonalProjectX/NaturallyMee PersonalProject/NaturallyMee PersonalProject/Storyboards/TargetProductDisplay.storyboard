@@ -28,13 +28,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="TRB-Se-bIJ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Account" id="FX7-sr-9Ik"/>
+                    <tabBarItem key="tabBarItem" title="Account" image="accountTabBarIcon" id="FX7-sr-9Ik"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZWz-6N-O8i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2580" y="2388.7556221889058"/>
         </scene>
-        <!--Target Product Display-->
+        <!--Main-->
+        <scene sceneID="APj-NO-f3Q">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="kV0-5z-tGV" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uvn-r5-TvI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-367" y="3231"/>
+        </scene>
+        <!--Natural Hair and Skincare-->
         <scene sceneID="ezk-Gh-aMD">
             <objects>
                 <viewController id="BDb-7a-pQw" customClass="TargetProductDisplay" customModule="NaturallyMee_PersonalProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -42,9 +50,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qbl-pB-qi2">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qbl-pB-qi2">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VWV-RT-kuQ">
                                     <size key="itemSize" width="182" height="184"/>
@@ -61,34 +68,44 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ryx-H3-u39">
-                                                    <rect key="frame" x="0.0" y="0.0" width="182" height="116"/>
+                                                    <rect key="frame" x="0.0" y="76" width="182" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6SG-qE-bU0">
-                                                    <rect key="frame" x="0.0" y="124" width="182" height="60"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f1m-cz-iY1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="182" height="184"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                </imageView>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="categoryLabel" destination="Ryx-H3-u39" id="FJR-wv-gyY"/>
-                                            <outlet property="categoryLabelDescription" destination="6SG-qE-bU0" id="eh0-ma-Llb"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qbl-pB-qi2" firstAttribute="trailing" secondItem="3JY-Gb-l48" secondAttribute="trailing" id="Cdl-6x-tX7"/>
+                            <constraint firstItem="qbl-pB-qi2" firstAttribute="top" secondItem="3JY-Gb-l48" secondAttribute="top" id="GHt-C3-0be"/>
+                            <constraint firstItem="qbl-pB-qi2" firstAttribute="bottom" secondItem="3JY-Gb-l48" secondAttribute="bottom" id="PGN-hz-LNZ"/>
+                            <constraint firstItem="qbl-pB-qi2" firstAttribute="leading" secondItem="3JY-Gb-l48" secondAttribute="leading" id="Y1l-Wf-uzs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3JY-Gb-l48"/>
                     </view>
-                    <navigationItem key="navigationItem" id="4id-dI-kag"/>
+                    <navigationItem key="navigationItem" title="Natural Hair and Skincare" id="4id-dI-kag">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="rGI-i9-GW1"/>
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="STW-gW-NVy">
+                            <color key="tintColor" red="0.4823529412" green="0.72941176470000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="kV0-5z-tGV" kind="show" identifier="goHome" id="W0A-c3-hV7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="categoryCollectionView" destination="qbl-pB-qi2" id="26W-K1-bJf"/>
                         <segue destination="DKp-jz-FuS" kind="show" identifier="segueTableView" id="ove-AI-WdR"/>
@@ -96,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SBD-zb-zGG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="544.79999999999995" y="3126.3868065967017"/>
+            <point key="canvasLocation" x="544.79999999999995" y="3206.4467766116945"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="hpz-O4-AFh">
@@ -116,31 +133,26 @@
             </objects>
             <point key="canvasLocation" x="1015" y="1555"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="WB6-pD-nyo">
-            <objects>
-                <viewController id="FCY-bU-GMx" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="DyT-C1-Gg9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="8Ym-nj-5tI"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="A4i-GJ-cDy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
         <!--Trends-->
         <scene sceneID="9mZ-Wh-oj3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Ph-cn-XwX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Trends" id="bbl-Ve-zN4"/>
+                    <tabBarItem key="tabBarItem" title="Trends" image="trendsTabBarIcon" id="bbl-Ve-zN4"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CRY-u8-jcw">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.4823529411764706" green="0.72941176470588232" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                            <color key="textColor" red="0.4823529412" green="0.72941176470000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="An9-2z-yrG">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BDb-7a-pQw" kind="relationship" relationship="rootViewController" id="L1v-mN-sGJ"/>
                     </connections>
@@ -150,4 +162,8 @@
             <point key="canvasLocation" x="544.79999999999995" y="2388.7556221889058"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="accountTabBarIcon" width="25" height="25"/>
+        <image name="trendsTabBarIcon" width="25" height="25"/>
+    </resources>
 </document>

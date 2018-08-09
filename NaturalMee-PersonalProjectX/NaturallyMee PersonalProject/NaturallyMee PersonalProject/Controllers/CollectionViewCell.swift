@@ -12,6 +12,5 @@ class CollectionViewCell: UICollectionViewCell {
     
     //MARK:  IBOutlets:
     @IBOutlet weak var categoryLabel: UILabel!
-    @IBOutlet weak var categoryLabelDescription: UILabel!
     
 }
