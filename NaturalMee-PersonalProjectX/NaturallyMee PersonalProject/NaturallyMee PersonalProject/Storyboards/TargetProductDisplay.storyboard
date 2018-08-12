@@ -18,7 +18,7 @@
             </objects>
             <point key="canvasLocation" x="545" y="3630"/>
         </scene>
-        <!--Account-->
+        <!--Favorites-->
         <scene sceneID="FxG-Dw-uVZ">
             <objects>
                 <viewController id="b15-NV-uvP" sceneMemberID="viewController">
@@ -28,7 +28,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="TRB-Se-bIJ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Account" image="accountTabBarIcon" id="FX7-sr-9Ik"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="heart25px" springLoaded="YES" id="FX7-sr-9Ik">
+                        <color key="badgeColor" red="0.4823529412" green="0.72941176470000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZWz-6N-O8i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,7 +78,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Wtj-sL-ueC">
-                                                    <rect key="frame" x="0.0" y="0.0" width="182" height="183"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
                                                 </stackView>
                                             </subviews>
                                         </view>
@@ -178,7 +180,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="accountTabBarIcon" width="25" height="25"/>
+        <image name="heart25px" width="25" height="25"/>
         <image name="trendsTabBarIcon" width="25" height="25"/>
     </resources>
 </document>

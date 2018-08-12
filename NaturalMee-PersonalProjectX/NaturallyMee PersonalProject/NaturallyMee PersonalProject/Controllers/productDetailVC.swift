@@ -5,7 +5,7 @@
 //  Created by Mari Campbell on 8/6/18.
 //  Copyright © 2018 Marianna Campbell. All rights reserved.
 //
-
+//Basicly you need persistense core 
 import Foundation
 import UIKit
 
@@ -28,7 +28,7 @@ class productDetailVC: UIViewController {
         if let productName = products?.name,
            let productImage = products?.image,
            let productPrice = products?.price,
-           let productDescription = products?.description {
+           let productDescription = products?.productDescription {
             
           productDetailImageView.image = productImage
           productDetailTitleLabel.text = productName
@@ -44,5 +44,7 @@ class productDetailVC: UIViewController {
         UIApplication.shared.open(url!, options: [:], completionHandler: nil)
     }
     
-
+    //kind of cheat and use a hack
+    let starButton = UIButton(type: .system)
+    
 }
