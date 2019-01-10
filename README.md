@@ -1,6 +1,6 @@
 # Naturally Mee
 
-Naturally Mee is intended to show users 100% vegan products. It also directs users 
+Naturally Mee shows users 100% vegan products. It also directs users 
 to where they can purchase the product.
 
 ### Preview Samples
