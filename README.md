@@ -1,5 +1,7 @@
 # Naturally Mee
 
+![Github](https://img.shields.io/github/languages/top/campbellmarianna/NaturallyMee-PersonalProject.svg)
+
 Naturally Mee shows users 100% vegan products. It also directs users 
 to where they can purchase the product.
 
